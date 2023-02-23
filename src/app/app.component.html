@@ -1,0 +1,17 @@
+<ion-app>
+    <ion-content>
+        <div #menuLine class="menu-line"></div>
+        <div class="menu-large">
+            <div class="menu-title">Avengers</div>
+            <div class="menu-links">
+                <div class="menu-link" routerLink="list" [ngClass]="currentPage == 'list' ? 'active-list' : ''">Listado</div>
+                <div class="menu-link" routerLink="myteam" [ngClass]="currentPage == 'myteam' ? 'active-myteam' : ''">Mis Heroes</div>
+                <div class="menu-link logout" (click)="logout()">
+                    <div>Salir</div>
+                </div>
+            </div>
+        </div>
+        <router-outlet></router-outlet>
+    </ion-content>
+    
+</ion-app>

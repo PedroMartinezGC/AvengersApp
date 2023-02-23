@@ -1,0 +1,24 @@
+<!-- Searchbar -->
+<div class="searchbar">
+  <app-custom-searchbar placeholder="Busque su libro..." (inputChange)="getSearchbarText($event)" color="#f44336"></app-custom-searchbar>
+</div>
+
+<!-- List of elements -->
+<div class="list">
+    <div *ngFor="let character of characters; let i = index">
+        <div class="element-detail">
+            <div class="portrait">
+                <img [src]="character.thumbnail.path + '.' + character.thumbnail.extension" alt="" style="width: 220px; height: auto">
+
+                <div class="action-buttons">
+                  <ion-icon class="action-icon" slot="start" style="color: #d70808" name="trash"></ion-icon>
+                  <ion-icon class="action-icon" slot="start" style="color: #f5c514" name="add"></ion-icon>
+                </div>
+            </div>
+            <div>
+                <span class="name-label">{{ character.name }}</span>
+            </div>
+        </div>
+    </div>
+</div>
+

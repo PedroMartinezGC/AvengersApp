@@ -1,0 +1,54 @@
+.list{
+    margin-top: 120px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 70px;
+    padding-left: 50px;
+    padding-right: 40px;
+}
+
+.element-detail{
+    display: flex;
+    flex-direction: column;
+    font-family: 'AnekTamil';
+}
+
+.portrait{
+    display: flex; 
+    flex-direction: row; 
+    justify-content: flex-start;
+    position: relative;
+}
+
+.action-buttons{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background: #0c0c0c;
+    height: 75px;
+    padding-top: 7px;
+    width: 0px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    box-shadow: 4px 1px 7px #312e2e;
+    overflow: hidden;
+    transition: 500ms all;
+}
+
+.action-icon{
+    padding-left: 2px;
+    cursor: pointer;
+}
+
+.name-label{
+    display: block;
+    font-size: 16px;
+}
+
+.searchbar{
+    margin-left: 48px;
+}
+
